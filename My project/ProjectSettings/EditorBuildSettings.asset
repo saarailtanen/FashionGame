@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/CityCentre.unity
+    guid: 1affeeeaef1088b4d9c8df02c1fb14a1
+  - enabled: 1
+    path: Assets/Scenes/Home.unity
+    guid: 2e19f0294fcde5845b93483c83aaf1a6
+  - enabled: 1
+    path: Assets/Scenes/Mall.unity
+    guid: 6ed471c7c8e3a544fa8a4aca9b8b7324
+  - enabled: 1
+    path: Assets/Scenes/Arcade.unity
+    guid: 0055d29ea9236794c8faaac3e6c39b10
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
