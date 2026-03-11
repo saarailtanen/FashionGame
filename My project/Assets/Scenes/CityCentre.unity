@@ -504,8 +504,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 352, y: -166.4}
-  m_SizeDelta: {x: -764.1392, y: -321.6799}
+  m_AnchoredPosition: {x: 634.6631, y: -172.63524}
+  m_SizeDelta: {x: -1329.4656, y: -334.1503}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &807318656
 MonoBehaviour:
@@ -557,6 +557,7 @@ GameObject:
   - component: {fileID: 1051732173}
   - component: {fileID: 1051732172}
   - component: {fileID: 1051732171}
+  - component: {fileID: 1051732174}
   m_Layer: 5
   m_Name: MallButton
   m_TagString: Untagged
@@ -580,7 +581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269.2375, y: -30}
+  m_AnchoredPosition: {x: -427, y: -26}
   m_SizeDelta: {x: 181.525, y: 76.6376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1051732171
@@ -626,7 +627,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1051732172}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1051732174}
+        m_TargetAssemblyTypeName: CityCentre, Assembly-CSharp
+        m_MethodName: TeleportMall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1051732172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,6 +678,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051732169}
   m_CullTransparentMesh: 1
+--- !u!114 &1051732174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051732169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2864c5f00e1257419c7b4d76e54ed8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CityCentre
 --- !u!1 &1248743226
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +702,7 @@ GameObject:
   - component: {fileID: 1248743230}
   - component: {fileID: 1248743229}
   - component: {fileID: 1248743228}
+  - component: {fileID: 1248743231}
   m_Layer: 5
   m_Name: ArcadeButton
   m_TagString: Untagged
@@ -700,8 +726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: 160}
-  m_SizeDelta: {x: 195.8751, y: 45.5459}
+  m_AnchoredPosition: {x: 96, y: 157}
+  m_SizeDelta: {x: 337.2067, y: 49.7027}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1248743228
 MonoBehaviour:
@@ -746,7 +772,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1248743229}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1248743231}
+        m_TargetAssemblyTypeName: CityCentre, Assembly-CSharp
+        m_MethodName: TeleportArcade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1248743229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -785,6 +823,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248743226}
   m_CullTransparentMesh: 1
+--- !u!114 &1248743231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248743226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2864c5f00e1257419c7b4d76e54ed8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CityCentre
 --- !u!1 &1469180682
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +847,7 @@ GameObject:
   - component: {fileID: 1469180686}
   - component: {fileID: 1469180685}
   - component: {fileID: 1469180684}
+  - component: {fileID: 1469180687}
   m_Layer: 5
   m_Name: HomeButton
   m_TagString: Untagged
@@ -820,8 +871,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0018548, y: 69.2}
-  m_SizeDelta: {x: 158.74, y: 55.7048}
+  m_AnchoredPosition: {x: 19.396584, y: 57.42238}
+  m_SizeDelta: {x: 197.5369, y: 79.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1469180684
 MonoBehaviour:
@@ -866,7 +917,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1469180685}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1469180687}
+        m_TargetAssemblyTypeName: CityCentre, Assembly-CSharp
+        m_MethodName: TeleportHome
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1469180685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -905,6 +968,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469180682}
   m_CullTransparentMesh: 1
+--- !u!114 &1469180687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469180682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2864c5f00e1257419c7b4d76e54ed8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CityCentre
 --- !u!1 &1721830385
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,8 +1015,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -434, y: -155.46}
-  m_SizeDelta: {x: -960.2563, y: -310.9174}
+  m_AnchoredPosition: {x: -779.7081, y: -174.21}
+  m_SizeDelta: {x: -1651.6725, y: -348.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1721830387
 MonoBehaviour:
@@ -1245,8 +1320,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 244, y: -131.67}
-  m_SizeDelta: {x: -156.6545, y: -433.5152}
+  m_AnchoredPosition: {x: 343.07068, y: -132.36276}
+  m_SizeDelta: {x: -462.8728, y: -445.9856}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2068370983
 MonoBehaviour:
